@@ -5,7 +5,6 @@ Kurzer Leitfaden für den täglichen Ablauf.
 ---
 
 ## 1. Basis aktualisieren
-```bash
 git fetch origin
 git checkout develop
 git pull origin develop
