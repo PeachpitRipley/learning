@@ -1,0 +1,40 @@
+# Git Workflow – Checkliste
+
+Kurzer Leitfaden für den täglichen Ablauf.
+
+---
+
+## 1. Basis aktualisieren
+```bash
+git fetch origin
+git checkout develop
+git pull origin develop
+
+2. Feature-Branch erstellen
+git checkout -b feat/mein-feature
+
+3. Am Code arbeiten
+Dateien ändern, speichern, lokal testen.
+
+ 4. Änderungen vormerken
+git add pfad/zur/datei.vue
+# oder alle Änderungen:
+git add .
+
+5. Commit schreiben
+git commit -m "feat: kurze präzise Beschreibung"
+
+6. Branch hochladen
+git push origin feat/mein-feature
+
+7. Pull Request öffnen
+Auf GitHub: Compare & Pull Request anklicken, Beschreibung ausfüllen.
+
+
+# Git Kurz-Workflow
+git fetch origin && git checkout develop && git pull origin develop
+git checkout -b feat/mein-feature
+# ... Dateien ändern ...
+git add . && git commit -m "feat: beschreibung"
+git push origin feat/mein-feature
+# Dann auf GitHub: Pull Request öffnen
